@@ -16,7 +16,7 @@ const ContactIcon: React.FC<ContactIconProps> = ({
   isInverted = false
 }): React.JSX.Element => {
   return (
-    <Link href={url} target="_blank">
+    <Link href={url} target="_blank" title={`Connect with Me on ${name}!`}>
       <Image
         className={`${isInverted ? "dark:invert" : ""} transition transform duration-300 hover:scale-110 hover:opacity-75 active:scale-90 active:opacity-60`}
         alt={name}
