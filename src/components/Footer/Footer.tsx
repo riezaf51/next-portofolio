@@ -1,7 +1,7 @@
 import React from "react";
 import CONTACTS from "@/data/contacts";
 
-import ContactIcon from "@/components/Icon/ContactIcon";
+import ContactIcon from "@/components/Icon/ContactIcon/ContactIcon";
 
 const Footer: React.FC = (): React.JSX.Element => {
   return (
@@ -13,7 +13,7 @@ const Footer: React.FC = (): React.JSX.Element => {
             <ContactIcon
               name={contact.name}
               url={contact.url}
-              logo={contact.logo}
+              logoUrl={contact.logoUrl}
               isInverted
             />
           </li>

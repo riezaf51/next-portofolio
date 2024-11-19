@@ -2,17 +2,17 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-interface ContactIconProps {
+export interface ContactIconProps {
   name: string,
   url: string,
-  logo: string,
+  logoUrl: string,
   isInverted?: boolean,
 };
 
 const ContactIcon: React.FC<ContactIconProps> = ({
   name,
   url,
-  logo,
+  logoUrl,
   isInverted = false
 }): React.JSX.Element => {
   return (
@@ -20,7 +20,7 @@ const ContactIcon: React.FC<ContactIconProps> = ({
       <Image
         className={`${isInverted ? "dark:invert" : ""} transition transform duration-300 hover:scale-110 hover:opacity-75 active:scale-90 active:opacity-60`}
         alt={name}
-        src={logo}
+        src={logoUrl}
         width={30}
         height={30}
         priority
